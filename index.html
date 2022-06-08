@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        @keyframes example {
+        0%   {background-image: url("Red Devil Gaming RGB Mouse Pad_01-06.jpg");}
+        15%  {background-image: url("Red Devil Gaming RGB Mouse Pad_02-06.jpg");}
+        30%  {background-image: url("Red Devil Gaming RGB Mouse Pad_01-06.jpg");}
+        45% {background-image: url("Red Devil Gaming RGB Mouse Pad_04-06.jpg");}
+        80% {background-image: url("Red Devil Gaming RGB Mouse Pad_04-06.jpg");}
+        100% {background-image: url("Red Devil Gaming RGB Mouse Pad_01-06.jpg");}
+        }
+
+        /* The element to apply the animation to */
+        div {
+        width: 1360px;
+        height: 800px;
+        /* background-color: red; */
+        background-image: url("Red Devil Gaming RGB Mouse Pad_01-06.jpg");
+        animation-name: example;
+        animation-duration: 4s;
+        /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="img"></div>
+</body>
+</html>
