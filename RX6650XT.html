@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        @keyframes example {
+        0%   {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_RED.jpg");}
+        15%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_ORANGE.jpg");}
+        30%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_YELLOW.jpg");}
+        45%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_GREEN.jpg");}
+        60%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_BLUE.jpg");}
+        75%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_INDIGO.jpg");}
+        90%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_PURPLE.jpg");}
+        100%  {background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_RED.jpg");}
+        }
+
+        /* The element to apply the animation to */
+        div {
+        width: 1200px;
+        height: 1200px;
+        /* background-color: red; */
+        background-image: url("Rx 6650 XT_Red Devil-1200x1200_FB_RED.jpg");
+        animation-name: example;
+        animation-duration: 10s;
+        /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="img"></div>
+</body>
+</html>
