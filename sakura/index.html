@@ -14,12 +14,11 @@
                     top:0px;
                     left:0px;
                     filter: blur(1);
-                    opacity: .8;
             }
-            /* 50%{
+            50%{
                 
-                opacity: 1;
-            } */
+                transform: rotate3d(1, 1, 1, 99deg);
+            }
             /* 90%{
                     top:900px;
                     left:1000px;
@@ -28,6 +27,8 @@
                     top:1200px;
                     left:1200px;
                     filter: blur(0);
+                    opacity: .5;
+                    transform: rotate3d(1, 1, 1, 45deg);
             }
         }
         @keyframes pinkTwo {
@@ -41,15 +42,15 @@
                     top:900px;
                     left:1000px;
             } */
-            /* 50% {
-                    top:300px;
-                    left:600px;
-                    filter: blur(0);
-            } */
+            50% {
+                    transform: rotate3d(1, 1, 1, 99deg);
+            }
             100% {
                     top:800px;
                     left:1200px;
                     filter: blur(0);
+                    opacity: .5;
+                    transform: rotate3d(1, 1, 1, 240deg);
             }
         }
         @keyframes pinkThree {
@@ -59,10 +60,15 @@
                     left:-120px;
                     filter: blur(1);
             } 
+            70%{
+                
+                    transform: rotate3d(0, 0, 1, 45deg);
+            }
             100% {
                     top:500px;
                     left:1700px;
                     filter: blur(0);
+                    opacity: .5;
             }
         }
         @keyframes left{
@@ -108,32 +114,36 @@
             position: absolute;
             /* width: 200px;
             height: 200px; */
+            opacity: 1;
         } 
         .sakura_pink{
             top: 820px;
             left: 820px;
             width: 20px;
             animation-name: pinkOne;
-            animation-duration:1.5s;
+            animation-duration:3.5s;
             animation-iteration-count:infinite;
-            animation-timing-function:cubic-bezier(.31,.6,.78,.36);
+            /* animation-timing-function:cubic-bezier(.31,.6,.78,.36); */
+            animation-timing-function:linear
         }
         .sakura_pinktwo{
             top: -820px;
             left: -820px;
             width: 20px;
             animation-name: pinkThree;
-            animation-duration:4s;
+            animation-duration:6.5s;
             animation-iteration-count:infinite;
-            animation-timing-function:cubic-bezier(.31,.6,.78,.36);
+            /* animation-timing-function:cubic-bezier(.31,.6,.78,.36); */
+            animation-timing-function:linear
         }
         .sakura_red{
             top: -820px;
             left: -820px;
             width: 20px;
             animation-name: pinkTwo;
-            animation-duration:3s;
+            animation-duration:6.5s;
             animation-iteration-count:infinite;
+            animation-timing-function:linear
         }
     </style>
 </head>
